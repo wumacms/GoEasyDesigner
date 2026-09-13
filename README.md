@@ -1,4 +1,3 @@
-
 <p align="center" style="text-align: center">
 <img src="GoEasyDesigner/build/appicon.png" width=256  height=256 />
 </p>
@@ -10,91 +9,102 @@
 <strong>
 <samp>
 
-[English](README.md) · [简体中文](README.zh-Hans.md)
+[简体中文](README.md) · [English](README.en.md)
 
 </samp>
 </strong>
 </div>
 
-# Window Designer
+# 窗口设计师
+
 ![666](https://github.com/duolabmeng6/GoEasyDesigner/assets/59047063/a89d2ab9-9ba3-4efc-b0fa-0a7dcc3bcfc1)
 
-This is a simple and easy-to-use visual interface design tool, developed in Go language using the Wails framework, supporting systems like Windows, MacOS, Linux, etc.
+这是一个简单易用的可视化界面设计工具，基于Go语言开发，使用Wails框架，支持Windows、MacOS、Linux等系统。
 
-Main Repository: https://github.com/duolabmeng6/GoEasyDesigner
+主仓库 https://github.com/duolabmeng6/GoEasyDesigner
 
-Mirror Repository: https://gitee.com/duolabmeng666/go-easy-designer
+镜像仓库 https://gitee.com/duolabmeng666/go-easy-designer
 
-**Project Progress:**
+**项目进度：**
 
-The project is in active development. Front-end experts are welcome to contribute PRs.
+项目处于积极开发阶段 欢迎前端大佬pr
 
-Completed tasks:
+已完成任务：
 
-- [x] Cross-platform compatibility: Supports Windows, MacOS, and Linux systems.
-- [x] Interface design and functionality development: Completed overall layout design, functional process design, interface drawing, property modification, component dragging, double-clicking components to jump to corresponding event functions, and other core features.
-- [x] Intelligent code editor: Implemented the Chinese character initial letter input reminder function for the code editing box, enhancing coding efficiency.
-- [x] [goefun library](https://pkg.go.dev/github.com/duolabmeng6/goefun#section-sourcefiles) Chinese function library support: Developing using Chinese functions in Golang.
-- [x] Component library: Completed development of components like buttons, text boxes, labels, switches, radio buttons, checkboxes, common layouts, flex layouts, tree boxes, menus, tables, progress bars, file selectors, and more.
-- [x] Custom component support: Allows the creation of custom components, such as login boxes, for rapid application development.
-- [x] Integrated development environment: Provided a one-click environment setup package, simplifying the construction of the development environment.
-- [x] Multilingual support: The application supports multiple languages including Chinese and English.
+- [x] 跨平台兼容性：支持Windows、MacOS和Linux系统。
 
-Tasks to be completed:
+- [x] 界面设计和功能开发：完成整体界面布局、功能流程设计、界面绘制、属性修改、组件拖拽、双击组件跳转到对应事件函数等核心功能的开发。
 
-- [ ] jsefun library support: Planned and awaiting development.
-- [ ] Component library enhancement: Ongoing, further improvement of [element-plus](https://element-plus.org/zh-CN/component/button.html) components.
-- [ ] Support for ElectronJS: Planned, will support ElectronJS as backend technology.
-- [ ] Custom cloud components: Users will be able to upload their templates for others to use.
+- [x] 智能代码编辑器：实现了代码编辑框的汉字首字母输入提醒功能，提高了编码效率。
 
-# Online Experience
+- [x] [goefun库](https://pkg.go.dev/github.com/duolabmeng6/goefun#section-sourcefiles) 库中文函数库支持：在Golang中使用中文函数进行开发。
 
-Thanks to a friend's server, you can now enjoy an online experience.
+- [x] 组件库：已完成按钮、编辑框、标签、开关、单选框、多选框、常用布局、弹性布局、树形框、菜单、表格、进度条、选择夹、常用布局弹、性布局等组件的开发。
 
-International address: https://go-easy-designer.vercel.app
+- [x] 自定义组件支持：允许创建自定义组件，例如登录框等模板，以便快速应用开发。
 
-[Download Window Running Project](https://github.com/duolabmeng6/wails-template-vue-go-easy), during online experience, design the interface in the browser and save. Two files will be downloaded: `design.json`, `__aux_code.js`. Make sure your browser allows downloading multiple files, and place the design files in the specified location.
+- [x] 集成开发环境：提供了一键配置环境压缩包，简化开发环境的搭建。
 
-[Video Tutorial: 10 Minutes to Get Started](https://www.bilibili.com/video/BV1ou4y1r7WS)
+- [x] 多语言支持：应用支持中文和英文等多种语言。
 
-[Video Tutorial: 3 Minutes to Learn Custom Component Packaging](https://www.bilibili.com/video/BV1ar4y1f7Rq)
+- [x] jsefun库支持：已开发 https://www.npmjs.com/package/jsefun
 
-# Environment Installation
-## Method 1
-### 1. Install Node.js Development Environment
+- [x] 支持ElectronJS：将支持ElectronJS作为后端技术。 [Electron 启动模板](https://github.com/duolabmeng6/electron-template-easy-desinger)
 
-[Node.js Download Page](https://nodejs.org/) Version 18 or above
+待完成任务：
 
-Domestic mirror: `npm install -g cnpm --registry=http://registry.npmmirror.com`
+- [ ] 组件库完善：正在进行中， [element-plus](https://element-plus.org/zh-CN/component/button.html) 组件的进一步完善。
+- [ ] 自定义云组件 用户可以自己上传模板供其他用户使用
 
-Install Vite: `npm install vite@latest`
+# 在线体验
 
-### 2. Install Go Language Development Environment
+感谢朋友提供的服务器,可以愉快的在线体验了
 
-[Go Language Download Page](https://golang.org/dl/) Any version
+国外地址: https://go-easy-designer.vercel.app
 
-Install Wails [Wails Framework Documentation](https://wails.io/zh-Hans/docs/gettingstarted/installation/)
+[下载窗口运行项目](https://github.com/duolabmeng6/wails-template-vue-go-easy),在线体验时在浏览器中画好界面保存,会下载2个文件 `design.json`,`__aux_code.js` 注意你的浏览器允许下载多个文件的权限,将设计文件放到指定位置即可.
 
-Domestic mirror execution: `go env -w GOPROXY=https://goproxy.cn,direct`
+[视频教程10分钟了入门](https://www.bilibili.com/video/BV1ou4y1r7WS)
+
+[视频教程3分钟学会自定义组件封装](https://www.bilibili.com/video/BV1ar4y1f7Rq)
+
+# 环境安装
+
+## 方式1
+
+### 1.安装 node js语言开发环境
+
+[node语言下载页面](https://nodejs.org/) 版本18以上
+
+国内镜像 `npm install -g cnpm --registry=http://registry.npmmirror.com`
+
+安装vite `npm install vite@latest`
+
+### 2.安装 go 语言开发环境
+
+[go语言下载页面](https://golang.org/dl/) 版本任意
+
+安装 wails [wails框架文档](https://wails.io/zh-Hans/docs/gettingstarted/installation/)
+
+国内镜像执行 `go env -w GOPROXY=https://goproxy.cn,direct`
 
 ```
 go install github.com/wailsapp/wails/v2/cmd/wails@latest
 ```
 
-After successful installation, run the Wails command. If there is content output, it means successful installation.
-## Method 2: Windows Complete Running Environment Package Download
+安装成功后，运行 wails 命令，有内容输出即为安装成功。
 
-[Xiaofeiji Cloud Disk Download Address, No Login Required](https://share.feijipan.com/s/4wU6lASg)
+## 方式2 Window可下载完整的运行环境包
 
-Download `GoEasyDesigner.2023.12.6.Including Running Environment.zip` and unzip.
+[小飞机网盘下载地址 免登录](https://share.feijipan.com/s/4wU6lASg)
 
-`env_soft.
+下载 `GoEasyDesigner.2023.12.6.包含运行环境.zip` 解压
 
-7z` Running environment package includes `go` and `node`. Unzip and find `One-Click Environment Configuration.exe`, run as administrator.
+`env_soft.7z` 运行环境包含 `go` 和 `node` 解压找到 `一键配置环境.exe` 以管理员身份运行
 
-If installation is successful, you can directly open `GoEasyDesigner.exe`.
+如果安装成功你就可以直接打开 `GoEasyDesigner.exe`
 
-If not configured successfully, add environment variables to the system's `PATH`. After adding, run `One-Click Environment Configuration.exe`.
+没有配置成功的话，自己添加环境变量到 系统的 `PATH` 添加后运行 `一键配置环境.exe` 即可
 
 ```
 C:\GoEasyDesigner\env_soft\go1.21.4\bin
@@ -102,127 +112,130 @@ C:\GoEasyDesigner\env_soft\go1.21.4\AppData\bin
 C:\GoEasyDesigner\env_soft\node-v20.9.0-win-x64
 ```
 
-`go-easy-demo` folder is a sample project.
+`go-easy-demo` 文件夹是示例项目
 
-Open `go-easy-demo\frontend\src\win\design.json` with Window Designer to design the interface or run and compile the project.
+窗口设计师打开 `go-easy-demo\frontend\src\win\design.json` 就可以设计界面或者运行编译项目了
 
-Open the `go-easy-demo` folder with Goland IDE to start coding.
+用 goland ide 打开 `go-easy-demo` 文件夹 就可以开始编写代码了
 
-# Project Creation
+# 项目创建
 
-## Create Window Running Project
-This project is for window running, your code will also be written here.
+## 创建窗口运行项目
 
-Create a project:
+该项目为窗口运行的环境你的代码也将在这里编写
+
+创建项目
 
 ```
 wails init -n "go-easy-demo" -t https://github.com/duolabmeng6/wails-template-vue-go-easy
 ```
 
-Run window:
+运行窗口
 
 ```
 cd go-easy-demo
 wails dev
 ```
 
-Compile into executable file:
+编译为可执行文件
 
 ```
 cd go-easy-demo
 wails build
 ```
 
-Front-end only debugging:
+仅调试前端
 
 ```
 cd go-easy-demo/frontend
 npm run dev
 ```
 
-# Usage Instructions
+# 使用说明
 
-### Download GoEasyDesigner
+### 下载 GoEasyDesigner
 
-Download the latest version: https://github.com/duolabmeng6/GoEasyDesigner/releases
+下载最新版本: https://github.com/duolabmeng6/GoEasyDesigner/releases
 
-Interface design file location:
+界面设计文件在这里
 
 ```
 go-easy-demo/frontend/src/win/design.json
 ```
 
-### Webstorm IDE Code Jump Plugin
+### webstorm IDE代码跳转插件
 
-To experience double-clicking components in the IDE to automatically jump to the corresponding function, install the QtEasyDesigner plugin in Webstorm. In this project's files,
+想体验双击组件在ide中自动跳转到对应函数 请在webstorm中安装 QtEasyDesigner 插件,在本项目的文件中，
 
-After installation, right-click in the IDE editor and select `Configure QtEasyDesigner`.
+安装后在IDE编辑器中右键看到 `配置 QtEasyDesigner `
 
-macOS path:
+macos填写路径
+
 ```
 /Applications/GoEasyDesigner.app/Contents/MacOS/GoEasyDesigner
 ```
 
-Windows path:
+window填写exe的路径
+
 ```
 C:\GoEasyDesigner\GoEasyDesigner.exe
 ```
 
-For subsequent use, open `design.json` in the editor, right-click and select `Open QtEasyDesigner`. The interface will appear.
+后续使用的话 打开 `design.json` 在编辑器中右键 `打开 QtEasyDesigner ` 界面就出来了
 
-JS code uses Webstorm IDE. Most coding should be done in JS. Use Go code only if JS cannot achieve the desired functionality.
-Go code is written in Goland IDE, typically in app.go.
+js代码使用 webstorm ide 绝大部分编写代码都应该在 js中编写,如果js无法实现的再调用go代码
+go代码使用 goland IDE 编写 一般情况下代码写在 app.go 中
 
-### For Window Designer Development
+### 开发窗口设计师请看
 
-For debugging in the IDE, you need the following configuration:
+在ide中调试需要以下配置
 
-Build package `changeme`.
+构建软件包 `changeme`
 
-Working directory `/Users/ll/Documents/GitHub/GoEasyDesigner/GoEasyDesigner` change to your path.
+工作目录 `/Users/ll/Documents/GitHub/GoEasyDesigner/GoEasyDesigner` 改成你的路径
 
-Environment variable `CGO_LDFLAGS=-framework UniformTypeIdentifiers` is needed for macOS, not for Windows.
+环境变量 `CGO_LDFLAGS=-framework UniformTypeIdentifiers` 这个macos需要 window不需要
 
-Go tool arguments `-tags dev -gcflags "all=-N -l"`.
+go工具实参 `-tags dev -gcflags "all=-N -l"`
 
-Program arguments (optional) `File Path=/Users/ll/Documents/GitHub/GoEasyDesigner/go-easy-demo/frontend/src/win/design.json port=8080` This is to work with the IDE plugin, where port is the plugin's port.
+程序实参(可选) `文件路径=/Users/ll/Documents/GitHub/GoEasyDesigner/go-easy-demo/frontend/src/win/design.json port=8080` 这是配合ide插件的port是插件的端口
 
-Now you can debug with breakpoints in app.go.
+现在可以在 app.go 中下断点调试了.
 
-#### go-easy-demo is a template project
+#### go-easy-demo 为模板项目
 
-Interface data location:
+界面数据在这里
 
 ```
 go-easy-demo/frontend/src/win/design.json
 ```
 
-Run to see the effects:
+运行 就可以看到效果了
 
 ```
 cd go-easy-demo
 wails dev
 ```
 
-# Window Designer Development Cases
+# 窗口设计师开发案例
 
-[Duoduo Projection Screen](https://gitee.com/duolabmeng666/projection_screen_tv) Easily project video files from MacOS and Windows to TV, similar to mobile phone screen projection, no need for NAS or other cumbersome operations. Direct file projection.
+[多多投屏](https://gitee.com/duolabmeng666/projection_screen_tv) 轻轻松松在MacOS和Window中将视频文件投屏到电视上,跟手机的投屏功能一致,无需nas等繁琐操作.直接文件投屏.
 
-# Contribution
+# 贡献
 
-The contributor list is too large for the README file! All the outstanding individuals who have contributed to this project can be found here [Contributor List](https://github.com/duolabmeng6/GoEasyDesigner/graphs/contributors).
-We will create a page later.
+贡献者列表对于自述文件来说太大了！ 所有为这个项目做出贡献的杰出人士在这里 [贡献列表](https://github.com/duolabmeng6/GoEasyDesigner/graphs/contributors)
+后面我们会制作页面
 
-# License
+# 许可证
 
-This project is licensed under the [GNU Lesser General Public License (LGPL) Version 3](LICENSE). For detailed information, please refer to the license file.
+本项目采用 [GNU Lesser General Public License (LGPL) 版本 3](LICENSE) 进行许可。详细信息请参阅许可证文件。
 
-# Learning and Exchange
+# 学习交流
 
-QQ Group: 927427009
+QQ群: 927427009
 
-# Appreciation
+# 赞赏
 
-If this project has been helpful to you, you can buy the author a coffee
+如果这个项目对你有帮助，可以请作者喝杯咖啡
 
 ![](README.assets/swskm.jpg)
